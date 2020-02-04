@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Galileo Health Center</title>
+</head>
+
+<body>
+  <!--
+  <div class="effettoPARALLAX">
+  <section class="zoom">
+    <img src="images/strutture1.jpg" id="layer1">
+    <img src="images/strutture.jpg" id="layer2">
+  </section>
+  <section class="content">
+
+    </section>
+  </div>
+-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <img src="images/Galileop.png" class="d-inline-block align-top" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <a class="btn btn-outline-light ml-auto btn-lg" href="areariservata.html" role="button">Area riservata</a>
+    </div>
+  </nav>
+  <div>
+    <img src="images/background.png" id="margintop">
+  </div>
+  <div class="card-deck carddeck">
+    <div class="card mtop-card zoom1">
+      <img src="images/clinica.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Le cliniche Galileo Health Center pluripremiate Bollini Rosa</p>
+      </div>
+    </div>
+    <div class="card mtop-card zoom1">
+      <img src="images/medici.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Tutti i medici a tua disposizione</p>
+      </div>
+    </div>
+    <div class="card mtop-card zoom1">
+      <img src="images/news.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+  <div>
+
+    <div class="effettoGHC">
+      <h1 class="h1">
+        <span>G</span><span class="span">alileo</span>
+        <span>H</span><span class="span">ealth</span>
+        <span>C</span><span class="span">enter</span>
+      </h1>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col" id="colleft">
+          <div class="row">
+            <div class="col mt-3">
+              <h3 id="titlecol">La nostra storia</h3>
+              <p id="paragrafcol">Medici altamente Specializzati, uno Staff Competente e Professionale e Attrezzature di Livello Superiore, rendono la clinica un ospedale privato all’avanguardia, accreditato al Servizio Sanitario Nazionale.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" id="colright">
+          <div class="row">
+            <div class="col mt-3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Le nostre strutture</h3>
+  <div id="map"></div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="foot">
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function initMap() {
+    var ragusa = {lat: 36.925911, lng: 14.728500};
+    var rome = {lat: 41.902782, lng: 12.496365};
+    var milan = {lat: 45.464203, lng: 9.189982};
+    var florence = {lat: 43.769562, lng: 11.255814};
+    var naples = {lat: 40.851799, lng: 14.268120};
+    var bologna = {lat: 44.494003, lng: 11.341359};
+    var lecce = {lat: 40.349815, lng: 18.181691};
+    var catania = {lat: 37.507877, lng: 15.083030};
+    var palermo = {lat: 38.115688, lng: 13.361267};
+    var crotone = {lat: 39.065181, lng: 17.123007};
+    var turin = {lat: 45.068371, lng: 7.683070};
+    var venice = {lat: 45.440845, lng: 12.315515};
+
+    var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 5, center: rome});
+
+      var marker = new google.maps.Marker({position: ragusa, map: map});
+      var marker = new google.maps.Marker({position: rome, map: map});
+      var marker = new google.maps.Marker({position: milan, map: map});
+      var marker = new google.maps.Marker({position: florence, map: map});
+      var marker = new google.maps.Marker({position: naples, map: map});
+      var marker = new google.maps.Marker({position: bologna, map: map});
+      var marker = new google.maps.Marker({position: lecce, map: map});
+      var marker = new google.maps.Marker({position: catania, map: map});
+      var marker = new google.maps.Marker({position: palermo, map: map});
+      var marker = new google.maps.Marker({position: crotone, map: map});
+      var marker = new google.maps.Marker({position: turin, map: map});
+      var marker = new google.maps.Marker({position: venice, map: map});
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk_Wy-rMZNiUf1GmAK3Z2tnv9IyBcckak&callback=initMap">
+  </script>
+
+<!--
+  <script>
+    var layer1 = document.getElementById('layer1')
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll' , function (e) {
+      var offset = window.pageYOffset;
+      scroll = offset;
+      layer1.style.width = (50 + scroll/5) + '%';
+    })
+
+  </script>
+-->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+
+</body>
+</html>
