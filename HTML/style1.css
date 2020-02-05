@@ -1,0 +1,29 @@
+/* CARD */
+.card-img-top{
+  margin-top: 1rem;
+  width: 50px;
+  height: 46px;
+}
+.carddeck{
+  margin-top: 9rem !important;
+  margin: auto;
+  width: 50rem;
+  height: 24rem;
+}
+
+.input{
+	width: 20rem;
+	height: 2rem;
+}
+
+.btn{
+	margin-left: 15rem;
+	margin-top: 1rem;
+	width: 7rem;
+}
+/*LOGO NAVBAR*/
+.d-inline-block{
+  margin-left: 5px;
+  width: 250px;
+  height: 90px;
+}
